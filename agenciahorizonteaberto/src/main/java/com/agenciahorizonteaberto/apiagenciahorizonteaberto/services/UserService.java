@@ -49,6 +49,10 @@ public class UserService {
         userRepositories.deleteById(id);
     }
 
+    public List<UserModel> getAllUsers() {
+        return null;
+    }
+
 
 
     
