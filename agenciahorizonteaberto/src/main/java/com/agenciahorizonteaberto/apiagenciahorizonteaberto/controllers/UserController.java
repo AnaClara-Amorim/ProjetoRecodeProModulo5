@@ -58,7 +58,7 @@ public class UserController {
     public ResponseEntity<UserModel> buyPacote(@PathVariable("idUser") String idUser, @PathVariable("idPacote") String idPacote) {
         try {
             if (idUser != null && idPacote != null) {
-                var compra = userService.buyPacote(idUser, idPacote);
+                var compra = userService.buyPacotes(idUser, idPacote);
                 return ResponseEntity.status(HttpStatus.OK).body(compra);
             } else {
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
@@ -68,9 +68,6 @@ public class UserController {
         } catch (RuntimeException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
-    }  */
-    
-
-
+    }    
 
 }
