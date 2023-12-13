@@ -1,5 +1,8 @@
 package com.agenciahorizonteaberto.apiagenciahorizonteaberto.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,24 +14,31 @@ public class PacoteModel {
     private String destino;
     private double preco;
 
-
     public String getId() {
         return id;
     }
+
     public void setId(String id) {
         this.id = id;
     }
+
     public String getDestino() {
         return destino;
     }
+
     public void setDestino(String destino) {
         this.destino = destino;
     }
+
     public double getPreco() {
         return preco;
     }
+
     public void setPreco(double preco) {
         this.preco = preco;
+
     }
+
     
+
 }

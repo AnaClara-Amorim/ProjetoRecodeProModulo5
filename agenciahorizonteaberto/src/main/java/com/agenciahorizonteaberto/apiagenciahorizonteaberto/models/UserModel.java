@@ -56,5 +56,9 @@ public class UserModel {
     public void setPacotes(List<PacoteModel> pacotes) {
         this.pacotes = pacotes;
     }
+
+    public void addPacote(PacoteModel pacote) {
+        this.pacotes.add(pacote);
+    }
             
 }
