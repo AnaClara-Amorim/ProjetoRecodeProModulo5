@@ -54,7 +54,7 @@ public class UserController {
         return new ResponseEntity<>(updated, HttpStatus.OK);
     }
 
-    /* @PostMapping("/{idUser}/{idPacote}")
+     @PostMapping("/{idUser}/{idPacote}")
     public ResponseEntity<UserModel> buyPacote(@PathVariable("idUser") String idUser, @PathVariable("idPacote") String idPacote) {
         try {
             if (idUser != null && idPacote != null) {
